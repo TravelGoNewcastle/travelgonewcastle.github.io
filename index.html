@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<script>
+    //Load All Live Times
+    //timetablegohere876
+</script>
+<head>
+    <title>devtitle889888</title>
+    <link rel="stylesheet" type="text/css" href="fancy.css">
+</head>
+<body>
+    <div id="locationserviceswarning">
+        <h1>
+            Please enable Location Services for this WebApp to function
+        </h1>
+            <h5>Please Wait</h5>
+            <h6>or</h6>
+        <button id="manualselectbtn" onclick="manualstationset()">
+            Manual Station select
+        </button>
+    </div>
+
+    <div id="header">
+        <div id="metro-logo">
+            <img id="metro-logo-img" src="https://www.nexus.org.uk/themes/custom/nexus/images/nexus-logo-metro.png"></img>
+        </div>
+        
+        <div id="timetableContent">
+            <div id="stationNameHeader">
+                <h3 id="stationNameHeaderText"></h3>
+            </div>
+            <div id="HeaderTrain1">
+                <h3 id="ServiceDestainationH1"></h3>
+                <h3 id="ServiceTimeUntilArivalH1"></h3>
+            </div>
+            <div id="HeaderTrain2">
+                <h3 id="ServiceDestainationH2"></h3>
+                <h3 id="ServiceTimeUntilArivalH2"></h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+<script>
+    function manualstationset(){
+        document.getElementById("locationserviceswarning").style.display = "none"
+        document.getElementById("manualstationselector").style.display = "block"
+    }
+</script>
+
+<script>
+    function changestation(stationname,gpsbool){
+        console.log(stationname)
+        document.getElementById("locationserviceswarning").style.display = "none" //Disable Location Services Warning
+        document.getElementById("header").style.display = "block" //Show Mainscreen Header
+
+    if (stationname=='Fawdon'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Fawdon[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Fawdon[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Fawdon[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Fawdon[1]).split("|")[2];
+        } else if (stationname=='Airport'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Airport[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Airport[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Airport[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Airport[1]).split("|")[2];
+        }else if (stationname=='Bank Foot'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Bank_Foot[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Bank_Foot[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Bank_Foot[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Bank_Foot[1]).split("|")[2];
+        }else if (stationname=='Bede'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Bede[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Bede[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Bede[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Bede[1]).split("|")[2];
+        }else if (stationname=='Brockley Whins'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Brockley_Whins[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Brockley_Whins[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Brockley_Whins[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Brockley_Whins[1]).split("|")[2];
+        }else if (stationname=='Byker'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Byker[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Byker[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Byker[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Byker[1]).split("|")[2];
+        }else if (stationname=='Callerton Parkway'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Callerton_Parkway[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Callerton_Parkway[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Callerton_Parkway[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Callerton_Parkway[1]).split("|")[2];
+        }else if (stationname=='Central'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Central_Station[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Central_Station[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Central_Station[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Central_Station[1]).split("|")[2];
+        }else if (stationname=='Chichester'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Chichester[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Chichester[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Chichester[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Chichester[1]).split("|")[2];
+        }else if (stationname=='Chillingham Road'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Chillingham_Road[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Chillingham_Road[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Chillingham_Road[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Chillingham_Road[1]).split("|")[2];
+        }else if (stationname=='Cullercoats'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Cullercoats[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Cullercoats[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Cullercoats[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Cullercoats[1]).split("|")[2];
+        }else if (stationname=='East Boldon'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (East_Boldon[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (East_Boldon[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (East_Boldon[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (East_Boldon[1]).split("|")[2];
+        }else if (stationname=='Fellgate'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Fellgate[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Fellgate[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Fellgate[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Fellgate[1]).split("|")[2];
+        }else if (stationname=='Felling'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Felling[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Felling[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Felling[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Felling[1]).split("|")[2];
+        }else if (stationname=='Four Lane Ends'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Four_Lane_Ends[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Four_Lane_Ends[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Four_Lane_Ends[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Four_Lane_Ends[1]).split("|")[2];
+        }else if (stationname=='Gateshead'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Gateshead[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Gateshead[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Gateshead[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Gateshead[1]).split("|")[2];
+        }else if (stationname=='Gateshead Stadium'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Gateshead_Stadium[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Gateshead_Stadium[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Gateshead_Stadium[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Gateshead_Stadium[1]).split("|")[2];
+        }else if (stationname=='Hadrian Road'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Hadrian_Road[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Hadrian_Road[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Hadrian_Road[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Hadrian_Road[1]).split("|")[2];
+        }else if (stationname=='Haymarket'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Haymarket[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Haymarket[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Haymarket[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Haymarket[1]).split("|")[2];
+        }else if (stationname=='Hebburn'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Hebburn[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Hebburn[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Hebburn[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Hebburn[1]).split("|")[2];
+        }else if (stationname=='Hebburn'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Hebburn[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Hebburn[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Hebburn[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Hebburn[1]).split("|")[2];
+        }else if (stationname=='Howdon'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Howdon[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Howdon[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Howdon[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Howdon[1]).split("|")[2];
+        }else if (stationname=='Ilford Road'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Ilford_Road[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Ilford_Road[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Ilford_Road[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Ilford_Road[1]).split("|")[2];
+        }else if (stationname=='Jarrow'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Jarrow[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Jarrow[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Jarrow[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Jarrow[1]).split("|")[2];
+        }else if (stationname=='Jesmond'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Jesmond[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Jesmond[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Jesmond[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Jesmond[1]).split("|")[2];
+        }else if (stationname=='Kingston Park'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Kingston_Park[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Kingston_Park[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Kingston_Park[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Kingston_Park[1]).split("|")[2];
+        }else if (stationname=='Longbenton'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Longbenton[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Longbenton[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Longbenton[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Longbenton[1]).split("|")[2];
+        }else if (stationname=='Manors'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Manors[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Manors[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Manors[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Manors[1]).split("|")[2];
+        }else if (stationname=='Meadow Well'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Meadow_Well[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Meadow_Well[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Meadow_Well[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Meadow_Well[1]).split("|")[2];
+        }else if (stationname=='Millfield'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Millfield[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Millfield[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Millfield[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Millfield[1]).split("|")[2];
+        }else if (stationname=='Monkseaton'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Monkseaton[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Monkseaton[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Monkseaton[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Monkseaton[1]).split("|")[2];
+        }else if (stationname=='Monument'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Monument[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Monument[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Monument[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Monument[1]).split("|")[2];
+        }else if (stationname=='North Shields'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (North_Shields[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (North_Shields[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (North_Shields[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (North_Shields[1]).split("|")[2];
+        }else if (stationname=='Northumberland Park'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Northumberland_Park[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Northumberland_Park[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Northumberland_Park[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Northumberland_Park[1]).split("|")[2];
+        }else if (stationname=='Pallion'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Pallion[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Pallion[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Pallion[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Pallion[1]).split("|")[2];
+        }else if (stationname=='Palmersville'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Palmersville[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Palmersville[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Palmersville[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Palmersville[1]).split("|")[2];
+        }else if (stationname=='Park Lane'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Park_Lane[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Park_Lane[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Park_Lane[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Park_Lane[1]).split("|")[2];
+        }else if (stationname=='Pelaw'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Pelaw[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Pelaw[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Pelaw[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Pelaw[1]).split("|")[2];
+        }else if (stationname=='Percy Main'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Percy_Main[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Percy_Main[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Percy_Main[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Percy_Main[1]).split("|")[2];
+        }else if (stationname=='Regent Centre'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Regent_Centre[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Regent_Centre[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Regent_Centre[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Regent_Centre[1]).split("|")[2];
+        }else if (stationname=='Seaburn'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Seaburn[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Seaburn[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Seaburn[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Seaburn[1]).split("|")[2];
+        }else if (stationname=='Shiremoor'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Shiremoor[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Shiremoor[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Shiremoor[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Shiremoor[1]).split("|")[2];
+        }else if (stationname=='Simonside'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Simonside[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Simonside[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Simonside[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Simonside[1]).split("|")[2];
+        }else if (stationname=='South Gosforth'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (South_Gosforth[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (South_Gosforth[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (South_Gosforth[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (South_Gosforth[1]).split("|")[2];
+        }else if (stationname=='South Hylton'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (South_Hylton[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (South_Hylton[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (South_Hylton[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (South_Hylton[1]).split("|")[2];
+        }else if (stationname=='South Shields'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (South_Shields[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (South_Shields[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (South_Shields[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (South_Shields[1]).split("|")[2];
+        }else if (stationname=='St. James'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (St_James[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (St_James[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (St_James[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (St_James[1]).split("|")[2];
+        }else if (stationname=="St. Peter's"){
+        document.getElementById("ServiceDestainationH1").innerHTML = (St_Peters[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (St_Peters[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (St_Peters[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (St_Peters[1]).split("|")[2];
+        }else if (stationname=='Stadium of Light'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Stadium_Light[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Stadium_Light[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Stadium_Light[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Stadium_Light[1]).split("|")[2];
+        }else if (stationname=='Sunderland'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Sunderland[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Sunderland[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Sunderland[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Sunderland[1]).split("|")[2];
+        }else if (stationname=='Tyne Dock'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Tyne_Dock[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Tyne_Dock[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Tyne_Dock[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Tyne_Dock[1]).split("|")[2];
+        }else if (stationname=='University'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (University[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (University[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (University[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (University[1]).split("|")[2];
+        }else if (stationname=='Walkergate'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Walkergate[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Walkergate[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Walkergate[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Walkergate[1]).split("|")[2];
+        }else if (stationname=='Wallsend'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Wallsend[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Wallsend[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Wallsend[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Wallsend[1]).split("|")[2];
+        }else if (stationname=='Wansbeck Road'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Wansbeck_Road[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Wansbeck_Road[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Wansbeck_Road[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Wansbeck_Road[1]).split("|")[2];
+        }else if (stationname=='West Jesmond'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (West_Jesmond[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (West_Jesmond[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (West_Jesmond[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (West_Jesmond[1]).split("|")[2];
+        }else if (stationname=='West Monkseaton'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (West_Monkseaton[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (West_Monkseaton[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (West_Monkseaton[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (West_Monkseaton[1]).split("|")[2];
+        }else if (stationname=='Whitley Bay'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Whitley_Bay[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Whitley_Bay[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Whitley_Bay[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Whitley_Bay[1]).split("|")[2];
+        }else if (stationname=='Benton'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Benton[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Benton[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Benton[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Benton[1]).split("|")[2];
+        }else if (stationname=='Heworth'){
+        document.getElementById("ServiceDestainationH1").innerHTML = (Heworth[0]).split("|")[1];
+        document.getElementById("ServiceDestainationH2").innerHTML = (Heworth[1]).split("|")[1];
+        document.getElementById("ServiceTimeUntilArivalH1").innerHTML = (Heworth[0]).split("|")[2];
+        document.getElementById("ServiceTimeUntilArivalH2").innerHTML = (Heworth[1]).split("|")[2];
+        }else{
+            document.getElementById("ServiceDestainationH1").innerHTML = "An Error Has Occured";
+        }
+
+
+
+
+
+        document.getElementById("stationNameHeaderText").innerHTML = stationname
+    }
+
+    //pydevmode
+    //changestation('')
+
+    function changestationgps(stationname){
+        changestation(stationname)
+    }
+</script>
+
+
+<script>
+
+    var closeststation = ""
+
+    function closeststationreturn(coordlatu,coordlong){
+            //Calculate Closest Station
+            var sl = ["South Hylton","Pallion","Millfield","University","Park Lane","Sunderland","St. Peter's","Stadium of Light","Seaburn","East Boldon","Brockley Whins","Fellgate","South Shields","Chichester","Tyne Dock","Simonside","Bede","Jarrow","Hebburn","Pelaw","Heworth","Northumberland Park","West Monkseaton","Gateshead Stadium","Gateshead","Central","Monument","Monkseaton","Whitley Bay","Haymarket","Jesmond","West Jesmond","Ilford Road","Cullercoats","North Shields","South Gosforth","Regent Centre","Wansbeck Road","Fawdon","Meadow Well","Percy Main","Kingston Park","Bank Foot","Callerton Parkway","Airport","Howdon","Hadrian Road","Longbenton","Four Lane Ends","Benton","Palmersville","Wallsend","Walkergate","Chillingham Road","Byker","Manors","St. James"];
+            var slcLong = [-1.4479012162707,-1.418146468084,-1.4010798664357,-1.3922461262113,-1.3844534152044,-1.3823698917475,-1.3835447508351,-1.3829669335617,-1.3863839949478,-1.420934472489,-1.4607286434194,-1.4860538689371,-1.4334784125224,-1.4320827705868,-1.4416031113025,-1.4552552270315,-1.464908906258,-1.4934273095627,-1.5209764308381,-1.5424818780661,-1.555766127441,-1.5196631175186,-1.4762295196066,-1.5883358174784,-1.604068544425,-1.6172815371433,-1.6130116039099,-1.4582108949662,-1.4427518713347,-1.6137564901484,-1.6057350383026,-1.6098510861922,-1.6108834502711,-1.4362482512215,-1.4489763186566,-1.6083254960241,-1.6214006405431,-1.6357642776446,-1.6440593158723,-1.4656362458768,-1.4745735901311,-1.6661018527406,-1.6778343436257,-1.7035333836769,-1.7111409200216,-1.4941603515393,-1.5157741742413,-1.5914078424255,-1.5781037175172,-1.5679018522884,-1.541676250859,-1.5326855228126,-1.5592998443635,-1.5718265274844,-1.5797104162411,-1.6047294931985,-1.6209735748079];//Station Co-Ordinates Latitude
+            var slcLat = [54.90412601953,54.912704113168,54.906510455555,54.902782166322,54.902473365475,54.906147252079,54.910916041927,54.918102276999,54.929352621469,54.946686068535,54.959539756924,54.95749264837,54.998326752253,54.986458311732,54.976078224346,54.971646937318,54.974026215619,54.979629919573,54.975428048015,54.952685579612,54.951566586407,55.0331146323,55.040484013454,54.957701962983,54.961708136052,54.968220524314,54.973688645083,55.042202438541,55.039796268005,54.977465240334,54.982921138354,54.993538166577,54.999921693635,55.034913763503,55.008103088701,55.005754535799,55.011906513336,55.014376595012,55.013592364208,55.001617369256,54.999589427625,55.014373686827,55.01386611565,55.027859934789,55.035875880154,54.995898156451,54.992301680616,55.008933980575,55.010236543601,55.01379525731,55.023494353673,54.989582035035,54.985367893054,54.982986310446,54.976184225152,54.973931618285,54.974252874975];//Station Co-Ordinates Longtitude
+            var distance = [];
+
+            for (let i = 0; i < sl.length; i++){//Go through every station and calculate distance based off of co-ordinates length and pythagory
+                //console.log(sl[i])
+                //distance.push(Math.sqrt(((slcLat[i]-coordlatu)*(slcLat[i]-coordlatu))+((slcLong[i]-coordlatu)*(slcLong[i]-coordlatu))))
+                //console.log(Math.sqrt(((slcLat[i]-coordlatu)*(slcLat[i]-coordlatu))+((slcLong[i]-coordlatu)*(slcLong[i]-coordlatu))))
+                distance.push(Math.sqrt(((slcLat[i]-coordlatu)**2)+((slcLong[i]-coordlong)**2)))
+                //console.log(Math.sqrt(((slcLat[i]-coordlatu)**2)+((slcLong[i]-coordlong)**2)))
+            
+            }
+            //console.log(distance)
+            //console.log(distance.indexOf(Math.min(...distance)))
+            return(sl[(distance.indexOf(Math.min(...distance)))])//return name of lowest number in distance list station name
+        }
+
+
+        //Get Location + Get Station
+        function getcloseststationGPS() {
+            if (navigator.geolocation) {
+                var navgeo =(navigator.geolocation.getCurrentPosition(showPosition, showError));
+                return (closeststation)
+            } else {
+                console.log("The Browser Does not Support Geolocation");
+            }
+        }
+
+        function showError(error) {
+            if(error.PERMISSION_DENIED){
+                console.log("The User have denied the request for Geolocation.");
+            }
+        }
+
+        function showPosition(position) {//Main Script
+            function station(){
+                changestationgps(closeststationreturn(Number(position.coords.latitude),Number(position.coords.longitude)))
+            }
+            console.log(station())
+            console.log(station())
+        }
+        getcloseststationGPS()
+</script>

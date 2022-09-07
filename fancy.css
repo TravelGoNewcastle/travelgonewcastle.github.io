@@ -1,0 +1,91 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@font-face {
+    font-family: 'Silkscreen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(squareishfont.ttf) format('truetype');
+  }
+  
+
+
+
+
+
+body{
+    background-color: #1f1f1f;
+}
+
+#header{
+    background-color: #fbba12;
+    width:95%;
+    height: 30%;
+    margin:2.5%;
+    margin-top:5%;
+    border-radius: 25px;
+    padding:0px;
+    display:none;
+}
+#metro-logo{
+    padding-top:7%;
+    padding-bottom: 7%;
+    padding-left: 4%;
+    display: inline-block;
+}
+#metro-logo-img{
+    width:100%;
+    height:100%;
+}
+#timetableContent{
+    display: inline-block;
+    background-color: #121212;
+    color:white;
+    width:82%;
+    height:40%;
+    margin-left: 2.5%;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius: 25px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: 'Silkscreen', sans-serif;
+}
+#stationNameHeader{
+    background-color: #262626;
+    color:#fbba12;
+    padding-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#HeaderTrain1,#HeaderTrain2{
+    margin-top: -20px;
+}
+
+#ServiceDestainationH1,#ServiceDestainationH2{
+    padding-left: 5%;
+    display: inline-block;
+    text-align: left;
+    width:57%;
+}
+#ServiceTimeUntilArivalH2,#ServiceTimeUntilArivalH1{
+    display: inline-block;
+    text-align: right;
+    width:30%;
+}
+#locationserviceswarning{
+    font-family: 'Silkscreen', sans-serif;
+    color:#fbba12;
+    font-size:300%;
+    text-align: center;
+}
+#manualselectbtn{
+    background-color: #fbba12;
+    color:#1f1f1f;
+    font-size: 150%;
+    font-family: 'Silkscreen', sans-serif;
+    margin-top:35%;
+}
